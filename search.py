@@ -66,7 +66,7 @@ class EnamineSession:
         :return:
         """
         json_data = quote(f'{{"search":{{"query":"{smiles}","similarityThreshold":"{str(threshold)}"}}}}')
-        full_str = f'controlPath=sim&jsonData={json_data}&reqMethod=POST'
+        full_str = f'controlPath=sim&jsonData={json_data}&PageSize=10000&reqMethod=POST'
 
         return self.run_request(search_ext=search_ext, full_str=full_str)
 
@@ -80,6 +80,6 @@ class EnamineSession:
         """
 
         json_data = quote(f'{{"search":"{smiles}"}}')
-        full_str = f'controlPath=sub&jsonData={json_data}&reqMethod=POST'
+        full_str = f'controlPath=sub&jsonData={json_data}&PageSize=10000&reqMethod=POST'
 
         return self.run_request(search_ext=search_ext, full_str=full_str)
