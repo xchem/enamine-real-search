@@ -1,4 +1,7 @@
 # enamine-real-search
+
+> ⚠️ This no longer works! Please go to https://github.com/matteoferla/Python_SmallWorld_API for a newer, working alternative to this.
+
 Wrapper around similarity and substructure searching functionality on enaminestore.com
 
 ## Installation
